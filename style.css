@@ -16,8 +16,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 4rem;
   font-weight: 600;
+  line-height: 1.2;
+    margin-bottom: 1rem;
 }
 
 header {
@@ -32,9 +34,12 @@ header {
 }
 
 .intro {
-  font-size: 1rem;
+  font-size: 1.125rem;
   color: #444;
   margin-top: 1rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .problems {
@@ -48,6 +53,13 @@ header {
   background: #f7f7f7;
   padding: 1.2rem;
   border-radius: 6px;
+}
+
+.problem-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.2rem;
 }
 
 section h2 {
