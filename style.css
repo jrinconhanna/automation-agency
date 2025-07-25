@@ -1,0 +1,64 @@
+/* style.css */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #ffffff;
+  color: #1a1a1a;
+  margin: 0;
+  padding: 2rem;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+.intro {
+  font-size: 1rem;
+  color: #444;
+  margin-top: 1rem;
+}
+
+.problems {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.problem {
+  background: #f7f7f7;
+  padding: 1.2rem;
+  border-radius: 6px;
+}
+
+section h2 {
+  font-size: 1.6rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+ul, ol {
+  padding-left: 1.2rem;
+}
+
+.bio {
+  margin-bottom: 2rem;
+}
+
+.cta {
+  text-align: center;
+  background: #f0f0f0;
+  padding: 2rem;
+  margin-top: 3rem;
+  border-radius: 8px;
+}
