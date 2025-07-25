@@ -1,0 +1,15 @@
+{
+  "name": "automation-agency",
+  "version": "1.0.0",
+  "description": "One-pager for our AI workflow automation agency.",
+  "main": "index.html",
+  "scripts": {
+    "dev": "http-server . -p 3000 -o"
+  },
+  "keywords": ["automation", "ai", "agency"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
