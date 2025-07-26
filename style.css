@@ -49,6 +49,13 @@ header {
   margin-bottom: 3rem;
 }
 
+.problems-headline {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
 .problem {
   background: #f7f7f7;
   padding: 1.2rem;
