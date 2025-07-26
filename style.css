@@ -11,6 +11,33 @@ body {
   line-height: 1.6;
 }
 
+.top-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+}
+
+  .nav-logo img {
+    height: 60px;
+  }
+
+  .nav-contact .contact-link {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #000000;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background 0.2s;
+  }
+
+  .nav-contact .contact-link:hover {
+    background: #ffffff;
+  }
+
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Inter', sans-serif;
 }
@@ -30,7 +57,8 @@ h2 {
 
 header {
   text-align: center;
-  margin-bottom: 3rem;
+  margin-top: 6rem; 
+  margin-bottom: 6rem;
 }
 
 .subtitle {
@@ -48,48 +76,104 @@ header {
   margin-right: auto;
 }
 
-.problems {
+.grid-section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
-  margin-bottom: 3rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
-.problems-headline {
+.grid-2 {
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.grid-section.grid-4 {
+grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.grid-headline {
+  margin-top: 4rem; 
   margin-bottom: 2rem;
 }
 
-.problem {
+.grid {
   background: #f7f7f7;
   padding: 1.2rem;
   border-radius: 6px;
 }
 
-.problem-title {
+.grid-title {
   font-size: 1.25rem;
   font-weight: 600;
   display: block;
+  margin-top: 0.6rem;
   margin-bottom: 0.2rem;
 }
 
-section h2 {
-  font-size: 1.6rem;
-  margin-top: 3rem;
-  margin-bottom: 1rem;
+.grid img {
+  width: 200px;         /* Set a smaller default width */
+  max-width: 100%;      /* Prevent overflow */
+  height: auto;         /* Keep aspect ratio */
+  display: block;
+  margin: 1rem auto 2rem;  /* Center and add space below */
+  border-radius: 6px;
 }
+
+.grid-2 .grid img {
+  width: 200px;      
+}
+
+.grid-4 .grid img {
+  width: 80px;      
+}
+
+/* 
+.grid p { 
+margin-top: 0.4rem;
+margin-bottom: 0;
+
+}
+*/ 
 
 ul, ol {
   padding-left: 1.2rem;
 }
 
-.bio {
-  margin-bottom: 2rem;
-}
-
-.cta {
+.bottom {
   text-align: center;
   background: #f0f0f0;
   padding: 2rem;
   margin-top: 3rem;
   border-radius: 8px;
+}
+
+.bottom h2 {
+  text-align: center;
+}
+
+.outro {
+  font-size: 1.125rem;
+  color: #444;
+  margin-top: 1rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-button {
+  background: #1a73e8;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  transition: background 0.2s;
+}
+
+.cta-button:hover {
+  background: #1558b0;
 }
