@@ -4,23 +4,26 @@ body {
   background-color: #ffffff;
   color: #1a1a1a;
   margin: 0;
-  padding: 2rem;
+  padding: 1rem;
   max-width: 960px;
   margin-left: auto;
   margin-right: auto;
   line-height: 1.6;
 }
 
+/* Nav*/
+
 .top-nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 0;
-  margin-bottom: 2rem;
+  padding: 0.3rem 0;      /* Reduce vertical padding */
+  margin-bottom: 0.5rem; /* Add this for more space below nav */
+
 }
 
   .nav-logo img {
-    height: 60px;
+    height: 40px;
   }
 
   .nav-contact .contact-link {
@@ -28,7 +31,7 @@ body {
     font-weight: 300;
     color: #000000;
     text-decoration: none;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.5rem;
     border-radius: 4px;
     transition: background 0.2s;
   }
@@ -37,6 +40,45 @@ body {
     background: #ffffff;
   }
 
+/* Sections*/
+
+.hero-section { 
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  z-index: 1;
+  background:
+    radial-gradient(circle at top left, rgba(217,239,255,0.3) 0%, transparent 90%),
+    radial-gradient(circle at bottom right, rgba(234,245,255,0.4) 0%, transparent 90%);
+  padding: 1rem 0 4rem 0;
+}
+
+header {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.bottom {
+  text-align: center;
+  background: #f0f0f0;
+  padding: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+  border-radius: 8px;
+}
+
+/* Headlines*/
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Inter', sans-serif;
@@ -46,19 +88,17 @@ h1 {
   font-size: 4rem;
   font-weight: 600;
   line-height: 1.2;
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 600;
   line-height: 1.2;
   text-align: left;
 }
 
-header {
+.bottom h2 {
   text-align: center;
-  margin-top: 6rem; 
-  margin-bottom: 6rem;
 }
 
 .subtitle {
@@ -69,6 +109,23 @@ header {
 
 .intro {
   font-size: 1.125rem;
+  color: #666;
+  margin-top: 1rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  display: block;
+  margin-top: 0.6rem;
+  margin-bottom: 0.2rem;
+}
+
+.outro {
+  font-size: 1.125rem;
   color: #444;
   margin-top: 1rem;
   max-width: 700px;
@@ -76,12 +133,27 @@ header {
   margin-right: auto;
 }
 
+p {
+  font-weight: 300;
+  color: #666;
+
+}
+
+/* 
+.grid p { 
+margin-top: 0.4rem;
+margin-bottom: 0;
+}
+*/ 
+
+/* Grid*/
+
 .grid-section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
   margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem;  
 }
 
 .grid-2 {
@@ -101,15 +173,11 @@ grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   background: #f7f7f7;
   padding: 1.2rem;
   border-radius: 6px;
+  padding: 2rem;    
 }
 
-.grid-title {
-  font-size: 1.25rem;
-  font-weight: 600;
-  display: block;
-  margin-top: 0.6rem;
-  margin-bottom: 0.2rem;
-}
+
+/* Images */
 
 .grid img {
   width: 200px;         /* Set a smaller default width */
@@ -120,46 +188,25 @@ grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   border-radius: 6px;
 }
 
+.expertise .grid img {
+  width: 80px;
+  max-width: 100%;
+  height: auto;
+}
+
 .grid-2 .grid img {
-  width: 200px;      
+  width: 400px;      
 }
 
 .grid-4 .grid img {
-  width: 80px;      
+  width: 100px;      
 }
-
-/* 
-.grid p { 
-margin-top: 0.4rem;
-margin-bottom: 0;
-
-}
-*/ 
 
 ul, ol {
   padding-left: 1.2rem;
 }
 
-.bottom {
-  text-align: center;
-  background: #f0f0f0;
-  padding: 2rem;
-  margin-top: 3rem;
-  border-radius: 8px;
-}
-
-.bottom h2 {
-  text-align: center;
-}
-
-.outro {
-  font-size: 1.125rem;
-  color: #444;
-  margin-top: 1rem;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-}
+/* CTA */
 
 .cta-button {
   background: #1a73e8;
@@ -177,3 +224,23 @@ ul, ol {
 .cta-button:hover {
   background: #1558b0;
 }
+
+.cta-note {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  color: #888888;
+}
+
+/* Particles */
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  pointer-events: none; /* Prevents blocking clicks */
+}
+
+
