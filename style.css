@@ -50,17 +50,20 @@ body {
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
-  z-index: 1;
-  background:
-    radial-gradient(circle at top left, rgba(217,239,255,0.3) 0%, transparent 90%),
-    radial-gradient(circle at bottom right, rgba(234,245,255,0.4) 0%, transparent 90%);
-  padding: 1rem 0 4rem 0;
+  z-index: 3;
+  background: 
+  radial-gradient(circle at top left, rgba(0, 240, 255, 0.2) 0%, transparent 80%),
+  radial-gradient(circle at bottom right, rgba(255, 110, 199, 0.15) 0%, transparent 85%),
+  linear-gradient(135deg, #0c0e1b 0%, #1e1e28 100%);
+  padding: 4rem 0 4rem 0;
 }
 
-header {
+.hero-section > header {
   text-align: center;
   margin-top: 0;
   margin-bottom: 2rem;
+  z-index: 2;
+
 }
 
 .container {
@@ -89,6 +92,7 @@ h1 {
   font-weight: 600;
   line-height: 1.2;
   margin-bottom: 1rem;
+  color: #E0E0E0;
 }
 h2 {
   font-size: 2.5rem;
@@ -109,11 +113,13 @@ h2 {
 
 .intro {
   font-size: 1.125rem;
-  color: #666;
+  color: #ccc;
   margin-top: 1rem;
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
+  z-index: 2;
 }
 
 .grid-title {
@@ -202,6 +208,14 @@ grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   width: 100px;      
 }
 
+.team .grid img {
+  width: 400px;      /* Set to the width of the left image */
+  height: auto;      /* Maintain aspect ratio */
+  display: block;
+  margin: 0 auto 1rem auto;
+  border-radius: 6px;
+}
+
 ul, ol {
   padding-left: 1.2rem;
 }
@@ -209,9 +223,11 @@ ul, ol {
 /* CTA */
 
 .cta-button {
-  background: #1a73e8;
+  position: relative;
+  background: #E35B00;
   color: #fff;
   border: none;
+  box-shadow: none;    
   padding: 0.8rem 2rem;
   font-size: 1.1rem;
   font-weight: 600;
@@ -219,17 +235,20 @@ ul, ol {
   cursor: pointer;
   margin-top: 1.5rem;
   transition: background 0.2s;
+  z-index: 3;
+  overflow: hidden;
 }
 
 .cta-button:hover {
-  background: #1558b0;
+  background: #C94F00;
 }
 
 .cta-note {
   text-align: center;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   font-size: 0.8rem;
-  color: #888888;
+  color: #bbb;
+  font-style: italic;
 }
 
 /* Particles */
