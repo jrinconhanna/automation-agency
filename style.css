@@ -167,7 +167,7 @@ grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
 .grid-section.grid-4 {
-grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .grid-headline {
