@@ -21,6 +21,12 @@ body {
   margin-bottom: 0.5rem; /* Add this for more space below nav */
 }
 
+  .nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 4px; /* Space between logo and text */
+  }
+
   .nav-logo img {
     height: 40px;
   }
@@ -94,7 +100,7 @@ footer {
   margin-bottom: 2rem;  /* Space below footer */
 }
 
-/* Headlines*/
+/* Headlines and Text*/
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Inter', sans-serif;
@@ -158,6 +164,14 @@ p {
   font-weight: 300;
   color: #666;
 
+}
+
+.logo-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  font-size: 15px;
+  color: #333; /* Adjust color as needed */
 }
 
 /* 
