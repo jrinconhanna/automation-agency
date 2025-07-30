@@ -12,7 +12,7 @@ particlesJS("particles-js", {
       "opacity": 0.4,
       "width": 1
     },
-    "move": { "enable": true, "speed": 2 }
+    "move": { "enable": true, "speed": 4 }
   },
   "interactivity": {
     "detect_on": "canvas",
@@ -27,3 +27,4 @@ particlesJS("particles-js", {
   },
   "retina_detect": true
 });
+
